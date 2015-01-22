@@ -1,0 +1,5 @@
+<launch>
+	<group ns="kinect_test_node">
+		<node pkg="depth_image_to_laserscan" name="depth_image_to_laserscan" type="depth_image_to_laserscan"/>
+	</group>
+</launch>

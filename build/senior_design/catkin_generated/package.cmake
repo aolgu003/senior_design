@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "senior_design")
+set(senior_design_MAINTAINER "andrew <andrew@todo.todo>")
+set(senior_design_DEPRECATED "")
+set(senior_design_VERSION "0.0.0")
+set(senior_design_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(senior_design_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(senior_design_BUILDTOOL_DEPENDS "catkin")

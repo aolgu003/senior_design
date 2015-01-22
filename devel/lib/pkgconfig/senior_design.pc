@@ -1,0 +1,8 @@
+prefix=/home/andrew/senior_design_ws/devel
+
+Name: senior_design
+Description: Description of senior_design
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/andrew/senior_design_ws/devel/lib 
+Requires: 
