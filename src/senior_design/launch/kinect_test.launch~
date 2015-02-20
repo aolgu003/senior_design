@@ -1,5 +1,13 @@
 <launch>
 	<group ns="kinect_test_node">
-		<node pkg="depth_image_to_laserscan" name="depth_image_to_laserscan" type="depth_image_to_laserscan"/>
+		<node pkg="depthimage_to_laserscan" name="depthimage_to_laserscan" type="depthimage_to_laserscan"/>
+		<node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 0 0 0 0 0 1 link1_parent link1 100" />
 	</group>
+
+	<node pkg="depthimage_to_laserscan" name="depthimage_to_laserscan" type="depthimage_to_laserscan">
+  		<remap from="image" to="/camera/depth/image_raw"/>
+	</node>
+
+		
+	
 </launch>
