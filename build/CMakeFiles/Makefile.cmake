@@ -243,6 +243,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "robot_setup_tf/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "robot_setup_tf/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "robot_setup_tf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "robot_setup_tf/CMakeFiles/camera_link_frame.dir/DependInfo.cmake"
   "robot_setup_tf/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "robot_setup_tf/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "robot_setup_tf/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake"

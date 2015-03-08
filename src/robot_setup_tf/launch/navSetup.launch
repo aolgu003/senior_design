@@ -1,6 +1,10 @@
 <launch>
 	<param name="use_sim_time" value="true" />
 	<rosparam file="$(find nav2d_tutorials)/param/ros.yaml"/>
+	
+	<node name="RosAria" pkg="rosaria" type="RosAria" >
+		<remap from="/RosAria/cmd_vel" to="/cmd_vel" />
+	</node>
 
 	<node name="stages" pkg="stage_ros" type="stageros" args="$(find nav2d_tutorials)/world/tutorial.world">
 	  <param name="base_watchdog_timeout" value="0" />

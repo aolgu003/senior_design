@@ -234,6 +234,20 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+robot_setup_tf/CMakeFiles/camera_link_frame.dir/rule:
+	cd /home/andrew/senior_design_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/camera_link_frame.dir/rule
+.PHONY : robot_setup_tf/CMakeFiles/camera_link_frame.dir/rule
+
+# Convenience name for target.
+camera_link_frame: robot_setup_tf/CMakeFiles/camera_link_frame.dir/rule
+.PHONY : camera_link_frame
+
+# fast build rule for target.
+camera_link_frame/fast:
+	cd /home/andrew/senior_design_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/camera_link_frame.dir/build.make robot_setup_tf/CMakeFiles/camera_link_frame.dir/build
+.PHONY : camera_link_frame/fast
+
+# Convenience name for target.
 robot_setup_tf/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/andrew/senior_design_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : robot_setup_tf/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -471,6 +485,30 @@ transform/fast:
 	cd /home/andrew/senior_design_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/transform.dir/build.make robot_setup_tf/CMakeFiles/transform.dir/build
 .PHONY : transform/fast
 
+src/camera_link_frame.o: src/camera_link_frame.cpp.o
+.PHONY : src/camera_link_frame.o
+
+# target to build an object file
+src/camera_link_frame.cpp.o:
+	cd /home/andrew/senior_design_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/camera_link_frame.dir/build.make robot_setup_tf/CMakeFiles/camera_link_frame.dir/src/camera_link_frame.cpp.o
+.PHONY : src/camera_link_frame.cpp.o
+
+src/camera_link_frame.i: src/camera_link_frame.cpp.i
+.PHONY : src/camera_link_frame.i
+
+# target to preprocess a source file
+src/camera_link_frame.cpp.i:
+	cd /home/andrew/senior_design_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/camera_link_frame.dir/build.make robot_setup_tf/CMakeFiles/camera_link_frame.dir/src/camera_link_frame.cpp.i
+.PHONY : src/camera_link_frame.cpp.i
+
+src/camera_link_frame.s: src/camera_link_frame.cpp.s
+.PHONY : src/camera_link_frame.s
+
+# target to generate assembly for a file
+src/camera_link_frame.cpp.s:
+	cd /home/andrew/senior_design_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/camera_link_frame.dir/build.make robot_setup_tf/CMakeFiles/camera_link_frame.dir/src/camera_link_frame.cpp.s
+.PHONY : src/camera_link_frame.cpp.s
+
 src/odom_broadcaster.o: src/odom_broadcaster.cpp.o
 .PHONY : src/odom_broadcaster.o
 
@@ -603,6 +641,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... camera_link_frame"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
@@ -627,6 +666,9 @@ help:
 	@echo "... tf_generate_messages_py"
 	@echo "... tf_listener"
 	@echo "... transform"
+	@echo "... src/camera_link_frame.o"
+	@echo "... src/camera_link_frame.i"
+	@echo "... src/camera_link_frame.s"
 	@echo "... src/odom_broadcaster.o"
 	@echo "... src/odom_broadcaster.i"
 	@echo "... src/odom_broadcaster.s"

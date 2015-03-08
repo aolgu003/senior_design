@@ -6,6 +6,10 @@
 	  <param name="base_watchdog_timeout" value="0" />
 	</node>
 
+	<node name="RosAria" pkg="rosaria" type="RosAria" >
+		<remap from="/RosAria/cmd_vel" to="/cmd_vel" />
+	</node>
+
 	<node name="Operator" pkg="nav2d_operator" type="operator" >
 	  <remap from="scan" to="base_scan"/>
 	  <rosparam file="$(find nav2d_tutorials)/param/operator.yaml"/>

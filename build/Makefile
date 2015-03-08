@@ -423,6 +423,19 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named camera_link_frame
+
+# Build rule for target.
+camera_link_frame: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_link_frame
+.PHONY : camera_link_frame
+
+# fast build rule for target.
+camera_link_frame/fast:
+	$(MAKE) -f robot_setup_tf/CMakeFiles/camera_link_frame.dir/build.make robot_setup_tf/CMakeFiles/camera_link_frame.dir/build
+.PHONY : camera_link_frame/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -898,6 +911,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... camera_link_frame"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"

@@ -1,0 +1,15 @@
+#<node name="Mapper" pkg="nav2d_karto" type="mapper">
+#		<remap from="scan" to="base_scan"/>
+#    		<rosparam file="$(find nav2d_tutorials)/param/mapper.yaml"/>
+#	</node>
+###########################################################
+# Defines topics services and frames for all modules
+### TF frames #############################################
+laser_frame: camera_link_frame
+robot_frame: base_link
+odometry_frame: odom
+offset_frame: offset
+map_frame: map
+### ROS topics ############################################
+map_topic: map
+laser_topic: base_scan

@@ -162,11 +162,14 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
+
 add_executable(tf_broadcaster src/tf_broadcaster.cpp)
 add_executable(tf_listener src/tf_listener.cpp)
 add_executable(sensor src/sensor.cpp)
 add_executable(odom src/odom_broadcaster.cpp)
-add_executable(transform transform.cpp) 
+add_executable(transform src/transform.cpp)
+add_executable(camera_link_frame src/camera_link_frame.cpp)
+target_link_libraries(frame_tf_broadcaster ${catkin_LIBRARIES}) 
 target_link_libraries(tf_broadcaster ${catkin_LIBRARIES})
 target_link_libraries(tf_listener ${catkin_LIBRARIES})
 target_link_libraries(sensor ${catkin_LIBRARIES})
